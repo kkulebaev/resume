@@ -2,9 +2,9 @@
 
 'use strict'
 
-const inquirer = require('inquirer')
-const chalk = require('chalk')
-const data = require('./data.json')
+import inquirer from 'inquirer'
+import chalk from 'chalk'
+import { data } from './data.js'
 
 // add response color
 const response = chalk.bold.blue
