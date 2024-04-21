@@ -2,22 +2,9 @@ import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { data } from './data.js'
 import { BACK, EXIT, EXIT_PROMPT_NAME, MAIN_PROMPT_NAME } from './constants.js'
+import { exitPrompt, mainPrompt } from './prompts.js'
 
 const chalkOutput = chalk.bold.blue
-
-const mainPrompt = {
-  type: 'list',
-  name: MAIN_PROMPT_NAME,
-  message: 'What do you want to know',
-  choices: [...Object.keys(data), EXIT],
-}
-
-const exitPrompt = {
-  type: 'list',
-  name: EXIT_PROMPT_NAME,
-  message: 'Go back or Exit?',
-  choices: [BACK, EXIT],
-}
 
 export function exec() {
   inquirer
