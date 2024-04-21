@@ -18,7 +18,8 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "fmt": "prettier --write ./src/**/*"
+    "fmt": "prettier --write ./src/**/*",
+    "test": "vitest . ./src/tests/**/*.spec.[jt]s"
   },
   "dependencies": {
     "chalk": "^5.3.0",
