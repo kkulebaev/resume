@@ -14,7 +14,7 @@
   "type": "module",
   "main": "src/main.js",
   "bin": {
-    "kkulebaev-resume": "./src/main.js"
+    "kkulebaev-resume": "src/main.js"
   },
   "scripts": {
     "start": "node src/main.js",
