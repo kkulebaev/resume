@@ -10,7 +10,6 @@ describe('CLI', () => {
 
     expect(consoleMock).toHaveBeenCalledWith('Hello, this is my resume')
     expect(consoleMock).toHaveBeenCalledTimes(1)
-    consoleMock.mockReset()
   })
 
   it('should finished when user select exit`', () => {
@@ -21,6 +20,5 @@ describe('CLI', () => {
     main()
 
     expect(inquirerMock).toHaveBeenCalledTimes(1)
-    inquirerMock.mockReset()
   })
 })
