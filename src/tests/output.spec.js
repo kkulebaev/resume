@@ -1,16 +1,26 @@
-import { afterAll, describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
+import inquirer from 'inquirer'
 import { main } from '../index.js'
 
 describe('CLI', () => {
-  const consoleMock = vi.spyOn(console, 'log').mockImplementation(() => undefined)
+  it('should display greeting when started`', () => {
+    const consoleMock = vi.spyOn(console, 'log')
 
-  afterAll(() => {
+    main()
+
+    expect(consoleMock).toHaveBeenCalledWith('Hello, this is my resume')
+    expect(consoleMock).toHaveBeenCalledTimes(1)
     consoleMock.mockReset()
   })
 
-  it('should display greeting when started`', () => {
+  it('should finished when user select exit`', () => {
+    const inquirerMock = vi
+      .spyOn(inquirer, 'prompt')
+      .mockImplementation(() => Promise.resolve({ resumeOptions: 'Exit' }))
+
     main()
-    expect(consoleMock).toHaveBeenCalledWith('Hello, this is my resume')
-    expect(consoleMock).toHaveBeenCalledTimes(1)
+
+    expect(inquirerMock).toHaveBeenCalledTimes(1)
+    inquirerMock.mockReset()
   })
 })
