@@ -1,20 +1,20 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { data } from './data.js'
-import { BACK, EXIT } from './constants.js'
+import { BACK, EXIT, EXIT_PROMPT_NAME, MAIN_PROMPT_NAME } from './constants.js'
 
 const chalkOutput = chalk.bold.blue
 
 const mainPrompt = {
   type: 'list',
-  name: 'resumeOptions',
+  name: MAIN_PROMPT_NAME,
   message: 'What do you want to know',
   choices: [...Object.keys(data), EXIT],
 }
 
 const exitPrompt = {
   type: 'list',
-  name: 'exitBack',
+  name: EXIT_PROMPT_NAME,
   message: 'Go back or Exit?',
   choices: [BACK, EXIT],
 }
@@ -22,10 +22,11 @@ const exitPrompt = {
 export function exec() {
   inquirer
     .prompt(mainPrompt)
-    .then(answer => {
-      if (answer.resumeOptions === EXIT) return
+    .then(answerObj => {
+      const answer = answerObj[MAIN_PROMPT_NAME]
+      if (answer === EXIT) return
 
-      const options = data[`${answer.resumeOptions}`]
+      const options = data[answer]
       if (options) {
         console.log(chalkOutput(new inquirer.Separator()))
         options.forEach(info => {
@@ -35,7 +36,7 @@ export function exec() {
       }
 
       inquirer.prompt(exitPrompt).then(choice => {
-        if (choice.exitBack === BACK) {
+        if (choice[EXIT_PROMPT_NAME] === BACK) {
           exec()
         } else {
           return
