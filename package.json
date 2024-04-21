@@ -1,7 +1,16 @@
 {
   "name": "kkulebaev-resume",
   "version": "1.0.1",
-  "description": "",
+  "description": "CLI for displaying the resume of Konstantin Kulebaev",
+  "keywords": [
+    "resume",
+    "cli",
+    "kkulebaev",
+    "developer",
+    "cv"
+  ],
+  "author": "kkulebaev",
+  "license": "ISC",
   "type": "module",
   "main": "src/index.js",
   "bin": {
@@ -11,9 +20,6 @@
     "start": "node src/index.js",
     "fmt": "prettier --write ./src/**/*"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",
     "inquirer": "^9.2.19"
