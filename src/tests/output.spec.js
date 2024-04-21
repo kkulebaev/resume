@@ -3,7 +3,7 @@ import inquirer from 'inquirer'
 import { main } from '../index.js'
 
 describe('CLI', () => {
-  it('should display greeting when started`', () => {
+  it('should display greeting when started', () => {
     const consoleMock = vi.spyOn(console, 'log')
 
     main()
@@ -12,7 +12,7 @@ describe('CLI', () => {
     expect(consoleMock).toHaveBeenCalledTimes(1)
   })
 
-  it('should finished when user select exit`', () => {
+  it('should finished when user select exit', () => {
     const inquirerMock = vi
       .spyOn(inquirer, 'prompt')
       .mockImplementation(() => Promise.resolve({ resumeOptions: 'Exit' }))
