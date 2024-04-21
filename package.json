@@ -19,7 +19,7 @@
   "scripts": {
     "start": "node src/index.js",
     "fmt": "prettier --write ./src/**/*",
-    "test": "vitest . ./src/tests/**/*.spec.[jt]s"
+    "test": "vitest ."
   },
   "dependencies": {
     "chalk": "^5.3.0",

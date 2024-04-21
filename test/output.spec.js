@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest'
 import inquirer from 'inquirer'
-import { main } from '../index.js'
+import { main } from '../src/index.js'
 
 describe('CLI', () => {
   it('should display greeting when started', () => {
