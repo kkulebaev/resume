@@ -12,12 +12,12 @@
   "author": "kkulebaev",
   "license": "ISC",
   "type": "module",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "bin": {
-    "kkulebaev-resume": "./src/index.js"
+    "kkulebaev-resume": "./src/main.js"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/main.js",
     "fmt": "prettier --write ./src/**/*",
     "test": "vitest ."
   },

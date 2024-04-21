@@ -1,12 +1,18 @@
+#!/usr/bin/env node
+
+'use strict'
+
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { data } from './data.js'
-import { BACK, EXIT, EXIT_PROMPT_NAME, MAIN_PROMPT_NAME } from './constants.js'
+import { BACK, EXIT, EXIT_PROMPT_NAME, GREETING, MAIN_PROMPT_NAME } from './constants.js'
 import { exitPrompt, mainPrompt } from './prompts.js'
 
 const chalkOutput = chalk.bold.blue
 
-export function exec() {
+export function main() {
+  console.log(GREETING)
+
   inquirer
     .prompt(mainPrompt)
     .then(answerObj => {
@@ -24,7 +30,7 @@ export function exec() {
 
       inquirer.prompt(exitPrompt).then(choice => {
         if (choice[EXIT_PROMPT_NAME] === BACK) {
-          exec()
+          main()
         } else {
           return
         }
@@ -32,3 +38,5 @@ export function exec() {
     })
     .catch(err => console.log('Ooops,', err))
 }
+
+main()
