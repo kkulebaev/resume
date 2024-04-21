@@ -5,7 +5,7 @@
 import { exec } from './exec.js'
 import { GREETING } from './constants.js'
 
-function main() {
+export function main() {
   console.log(GREETING)
   exec()
 }
