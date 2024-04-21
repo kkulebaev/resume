@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "fmt": "prettier --write ./src/**/*",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fmt": "prettier --write ./src/**/*"
   },
   "keywords": [],
   "author": "",
