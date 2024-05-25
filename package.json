@@ -9,6 +9,9 @@
     "developer",
     "cv"
   ],
+  "engines": {
+    "node": "20.9.0"
+  },
   "author": "kkulebaev<konstantinkulebaev@gmail.com>",
   "license": "ISC",
   "type": "module",
