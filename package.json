@@ -9,7 +9,7 @@
     "developer",
     "cv"
   ],
-  "author": "kkulebaev",
+  "author": "kkulebaev<konstantinkulebaev@gmail.com>",
   "license": "ISC",
   "type": "module",
   "main": "src/main.js",
