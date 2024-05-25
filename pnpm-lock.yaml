@@ -15,6 +15,9 @@ importers:
         specifier: ^9.2.19
         version: 9.2.19
     devDependencies:
+      '@kkulebaev/prettier-config':
+        specifier: ^0.2.0
+        version: 0.2.0
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -172,6 +175,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.4.15':
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+
+  '@kkulebaev/prettier-config@0.2.0':
+    resolution: {integrity: sha512-v4BtbtZMAM84dDMJhYEyaqujofmKlP0c6bCZbJXTx0S5ROQOlq1CQudv/BFLA2j07lO/kCAWvTuf1LNfoIAfEQ==}
 
   '@ljharb/through@2.3.13':
     resolution: {integrity: sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ==}
@@ -875,6 +881,8 @@ snapshots:
       '@sinclair/typebox': 0.27.8
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
+
+  '@kkulebaev/prettier-config@0.2.0': {}
 
   '@ljharb/through@2.3.13':
     dependencies:
