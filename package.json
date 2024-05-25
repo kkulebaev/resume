@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kkulebaev/kkulebaev-resume.git"
+    "url": "git+https://github.com/kkulebaev/resume.git"
   },
   "bugs": {
-    "url": "https://github.com/kkulebaev/kkulebaev-resume/issues"
+    "url": "https://github.com/kkulebaev/resume/issues"
   },
-  "homepage": "https://github.com/kkulebaev/kkulebaev-resume#readme"
+  "homepage": "https://github.com/kkulebaev/resume#readme"
 }
