@@ -1,5 +1,5 @@
 {
-  "name": "kkulebaev-resume",
+  "name": "@kkulebaev/resume",
   "version": "0.1.1",
   "description": "CLI for displaying the resume of Konstantin Kulebaev",
   "keywords": [
@@ -32,5 +32,16 @@
     "@kkulebaev/prettier-config": "^0.2.0",
     "prettier": "^3.2.5",
     "vitest": "^1.5.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkulebaev/kkulebaev-resume.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kkulebaev/kkulebaev-resume/issues"
+  },
+  "homepage": "https://github.com/kkulebaev/kkulebaev-resume#readme"
 }

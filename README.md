@@ -1,1 +1,1 @@
-# kkulebaev-resume
+# @kkulebaev/resume
