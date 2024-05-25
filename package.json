@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "node src/main.js",
-    "fmt": "prettier --write ./src/**/*",
+    "fmt": "prettier ./src --write",
     "test": "vitest ."
   },
   "dependencies": {
