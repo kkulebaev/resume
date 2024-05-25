@@ -10,7 +10,8 @@
     "cv"
   ],
   "engines": {
-    "node": "20.9.0"
+    "node": "^20.9.0",
+    "pnpm": "^9.0.0"
   },
   "author": "kkulebaev<konstantinkulebaev@gmail.com>",
   "license": "ISC",
