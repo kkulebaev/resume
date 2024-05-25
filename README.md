@@ -1,5 +1,6 @@
-![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/kkulebaev?style=for-the-badge&labelColor=%231d9bf0)
-![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40kkulebaev%2Fresume?style=for-the-badge)
+![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/kkulebaev?style=for-the-badge&label=TWITTER%20%40kkulebaev&labelColor=%231d9bf0&link=https%3A%2F%2Fx.com%2Fkkulebaev)
+![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/kkulebaev?style=for-the-badge&label=TELEGRAM%20%40kkulebaev&labelColor=%230088cc&link=https%3A%2F%2Ft.me%2Fkkulebaev)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40kkulebaev%2Fresume?style=for-the-badge&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40kkulebaev%2Fresume)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/kkulebaev/resume?style=for-the-badge)
 
 # @kkulebaev/resume
