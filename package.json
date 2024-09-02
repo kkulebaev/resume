@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "inquirer": "^10.1.0"
+    "inquirer": "^10.2.0"
   },
   "devDependencies": {
     "@kkulebaev/prettier-config": "^0.2.0",
